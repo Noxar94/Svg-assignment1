@@ -47,7 +47,20 @@ header {
   justify-content: center;
   background-color: rgb(167, 197, 35, 0.4);
   border-radius: 50px;
+  animation: effect 2s cubic-bezier(.5,.01,.5,.99);
+}
 
+.container-box {
+  content: "";
+}
+
+@keyframes effect {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 30%;
+  }
 }
 
 .text-box{
