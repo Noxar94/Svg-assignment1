@@ -61,12 +61,28 @@ header {
   100%{
     width: 30%;
   }
+  
 }
 
 .text-box{
   width: 90%;
   height: 95%;
   border-radius: 50px;
+
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 
 .text-box h3{
