@@ -4,74 +4,69 @@
   box-sizing: border-box;
 }
 
-.background-container {
+body {
   width: 100%;
   height: 100vh;
-  background-size: cover;
-
-  background-image: url(../svg-img/Stars.svg);
-  z-index: -1;
-
-  position: absolute;
+  background: url(/svg/endless-stars.svg);
 
 }
 
-/*NAVBAR*/
-
 header {
-  width: 100vw;
-  
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.logo {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: pulse ease infinite;
+  animation-duration: 2s;
+  animation-delay: 10s;
+}
+
+
+
+.container-main {
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   
 }
 
-.navbar {
+.container-box {
+  width: 30%;
+  height: 70%;
   display: flex;
-  justify-content: center ;
-  align-items: center;
-  width: 80%;
-  height: 100px;
-  margin-top:2%;
-
+  justify-content: center;
+  background-color: rgb(167, 197, 35, 0.4);
   border-radius: 50px;
 
-  background-color: rgba(252, 250, 250, 0.1);
-  box-shadow: 0px 0px 15px #ebe188;
-  
-}
-.logo {
-  width: 30px;
-  height: 30px;
 }
 
-.navbar ul {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  list-style: none;
-
-  position: absolute;
-  
-  
-
+.text-box{
+  width: 90%;
+  height: 95%;
+  border-radius: 50px;
 }
 
-.navbar li {
-  margin: 2%;
-  font-size: 28px;
-  font-weight: 700px;
-  
-  color: white;
-
-  
+.text-box h3{
+  text-align: center;
 }
 
-.navbar li:hover {
-  color: #b71a1a;
-  transition: 1s;
-  cursor: pointer;
-  
+.text-box h1 { 
+  font-size: 40px;
+  text-align: center;
 }
+
+.event-details {
+  font-size: 22px;
+  padding: 10px;
+}
+
